@@ -1,28 +1,30 @@
 # Translation tool
 
 ## Introduction
-This translation tool was written for a master thesis on [subject] at Utrecht University. 
+This translation tool was developed for the master thesis 'The future of digital health technologies: analysing a combination of HTA guidance documents and HTA submissions to evaluate reimbursement opportunities' at Utrecht University. 
 
-## How to use?
-Open the tool.html file in a modern web-browser like Google Chrome. On this page open one of the supplied .XML files. These files contain the pathways the translation tool will loop through. This is done in a Question & Answer style. Each answer will influence which part of the pathway will be taken.
+## Utilisation procedure
+1. Open the tool.html file in any modern web-browser that supports Javascript ES11.
+2. In the chosen web-browser, open one of the supplied .XML files. These files contain the reimbursement pathways.
+3. Traversing through the pathways is done in a Question & Answer type of way. Each given answer determines the route of the pathway until the end of the pathway has been reached.
 
 ## Markdown
 Each element has its own formatting to display its function. 
 
 ### Questions
-Questions have a lightgrey background color.
+Questions are visualised through a lightgrey background color.
 
 ### Answers
 Answers are preceded with a radiobutton. 
 
 ### Outcomes
-Outcomes have a five pixel black border.
+Outcomes are visualised through a five pixel black border.
 
 ### Descriptions
-Descriptions have a lightyellow background color.
+Descriptions are visualised through a lightyellow background color.
 
-### Steps taken between questions
-The steps that need to be taken in between questions have a lightgreen background color.
+### Actions required
+The required actions are visualised through a lightgreen background color.
 
 ## License
 MIT License
