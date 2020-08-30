@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<framework>
+	<question>
+		<title>1. Does the DHT have a class I or IIa classification?</title>
+		<description></description>
+		<option>
+			<value>Yes</value>
+			<question>
+				<title>2. Is there evidence available regarding the technical requirements of the DHT?</title>
+				<description></description>
+				<option>
+					<value>Yes</value>
+					<question>
+						<title>3.Is there evidence available regarding positive impact on healthcare provision of the DHT?</title>
+						<description>This requires, apart from the general demands regarding safety, functionality, quality, data protection and data safety, that the manufacturer at least provides reasonable justification (not yet evidence) for the product’s contribution toimprovement of health care provision.</description>
+						<option>
+							<value>Yes</value>
+							<question>
+								<condition>Application of DHT at BfArM</condition>
+								<evidence>Evidence required</evidence>
+								<title>4.Does the DHT meet the techincal requirements and has it positive impact on healthcare provision?</title>
+								<description></description>
+								<option>
+									<value>Yes</value>
+									<condition>Full registration of DHT</condition>
+									<condition>Reimbursement period for 12 months at manufacturer's price</condition>
+									<condition>Reimbursement negotiations with GKV-Spitzenverband for period after 12 months</condition>
+									<outcome>Reimbursement at negotiated price</outcome>
+								</option>
+								<option>
+									<value>No</value>
+									<outcome>Rejection of DHT</outcome>
+								</option>
+							</question>
+						</option>
+						<option>
+							<value>No</value>
+							<question>
+								<condition>preliminary application of DHT at BfArM</condition>
+								<evidence>Evidence required</evidence>
+								<title>5.Does the DHT meet the techincal requirements?</title>
+								<description></description>
+								<option>
+									<value>Yes</value>
+									<question>
+										<condition>Preliminary registration for 12 month testing period</condition>
+										<evidence>Evidence required</evidence>
+										<title>6.Does the DHT have a positive impact on healthcare provision?</title>
+										<description></description>
+										<option>
+											<value>Yes</value>
+											<condition>Reimbursement negotiations with GKV-Spitzenverband for period after 12 months</condition>
+											<outcome>Reimbursement at negotiated price</outcome>
+										</option>
+										<option>
+											<value>No</value>
+											<outcome>Prolonging the testing period with 12 months</outcome>
+										</option>
+									</question>
+								</option>
+								<option>
+									<value>No</value>
+									<outcome>Rejection of DHT</outcome>
+								</option>
+							</question>
+						</option>
+					</question>
+				</option>
+				<option>
+					<value>No</value>
+					<outcome>Not able to apply for registration</outcome>
+					<outcome>Selective contracting sick funds  (Public and/or private)</outcome>
+					<description>Standard for reimbursement before implementation of DVG</description>
+				</option>
+			</question>
+		</option>
+		<option>
+			<value>No</value>
+			<outcome>Not able to apply for registration</outcome>
+			<outcome>Selective contracting sick funds (Public and/or private)</outcome>
+			<description>Standard for reimbursement before implementation of DVG</description>
+		</option>
+	</question>
+</framework>

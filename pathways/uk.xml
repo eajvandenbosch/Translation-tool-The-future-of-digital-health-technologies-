@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<framework>
+	<question>
+		<title>1. Does the DHT have a CE-mark?</title>
+		<option>
+			<value>Yes</value>
+			<condition>Registration with Health Tech Connect</condition>
+			<question>
+				<title>2. Is the DHT within the remit of a NICE evaluation programme and not currently being evaluated?</title>
+				<option>
+					<value>Yes</value>
+					<question>
+						<title>3. Is the DHT a new or innovative technology?</title>
+						<option>
+							<value>Yes</value>
+							<question>
+								<title>4. Is the DHT currently or soon available to the health and social care system?</title>
+								<option>
+									<value>Yes</value>
+									<question>
+										<title>Selection or rejection of technology for assessement</title>
+										<option>
+											<value>Selection</value>
+											<condition>Manufacturer provides clinical and cost effectiveness evidence</condition>
+											<evidence>Evidence required</evidence>
+											<condition>review by NICE based on clinical effectiveness and economic impact</condition>
+											<description>Economic impact</description>
+											<condition>Key economic information:- user population size - current and propesed care pathways - parameters for the economic model</condition>
+											<condition>Appropriate economic analysis</condition>
+											<condition>Economic analysis reporting standards</condition>
+											<question>
+												<title>10. What level of economic risk does the DHT imply for the payer?</title>
+												<option>
+													<value>Low</value>
+													<condition>No national financial commitment</condition><condition>Budget impact analysis</condition>
+													<description>Economic impact assessment</description>
+													<condition>Decision by NICE</condition>
+													<outcome>Rejection or supportive advice for inclusion in the NHS</outcome>
+												</option>
+												<option>
+													<value>Medium</value>
+													<condition>Low national financial commitment</condition><condition>Cost-consequence analysis + budget impact analysis</condition>
+													<description>Economic impact assessment</description>
+													<condition>Decision by NICE</condition>
+													<outcome>Rejection or supportive advice for inclusion in the NHS</outcome>
+												</option>
+												<option>
+													<value>High</value>
+													<condition>High national financial commitment</condition><condition>Cost-utility analysis or cost-consequence analysis + budget impact analysis</condition>
+													<description>Economic impact assessment</description>
+													<condition>Decision by NICE</condition>
+													<outcome>Rejection or supportive advice for inclusion in the NHS</outcome>
+												</option>
+											</question>
+											<description>Clinical effectiveness</description>
+											<question>
+												<title>5. Can the function of the DHT further be classified as: treat, active monitoring, calculate and/or diagnose?</title>
+												<option>
+													<value>Yes</value>
+													<question>
+														<title>9. Can the DHT be classified as an higher-risk DHT?*</title>
+														<description>* Contextual questions to help identify higher-risk DHTs: 1. Are the intended users of the DHT considered to be in a potentially vulnerable group such as children or at-risk adults? 2. How serious could the consequences be to the user if the DHT failed to perform as described? 3. Is the DHT intended to be used with regular support from a suitably qualified and experienced health or social care professional? 4. Does the DHT include machine learning algorithms or artificial intelligence?</description>
+														<option>
+															<value>Yes</value>
+															<condition>Evidence tier 3b high risk</condition>
+															<condition>Effectiveness assessment based on evidence tier</condition>
+															<condition>Decision by NICE</condition>
+															<outcome>Rejection or supportive advice for inclusion in the NHS</outcome>
+														</option>
+														<option>
+															<value>No</value>
+															<condition>Evidence tier 3b low risk</condition>
+															<condition>Effectiveness assessment based on evidence tier</condition>
+															<condition>Decision by NICE</condition>
+															<outcome>Rejection or supportive advice for inclusion in the NHS</outcome>
+														</option>
+													</question>
+												</option>
+												<option>
+													<value>No</value>
+													<question>
+														<title>6. Can the function of the DHT  be classified as: preventative behaviour change and/or self-manage?</title>
+														<option>
+															<value>Yes</value>
+															<question>
+																<title>9. Can the DHT be classified as an higher-risk DHT?*</title>
+																<description>* Contextual questions to help identify higher-risk DHTs: 1. Are the intended users of the DHT considered to be in a potentially vulnerable group such as children or at-risk adults? 2. How serious could the consequences be to the user if the DHT failed to perform as described? 3. Is the DHT intended to be used with regular support from a suitably qualified and experienced health or social care professional? 4. Does the DHT include machine learning algorithms or artificial intelligence?</description>
+																<option>
+																	<value>Yes</value>
+																	<condition>Evidence tier 3a high risk</condition>
+																	<condition>Effectiveness assessment based on evidence tier</condition>
+																	<condition>Decision by NICE</condition>
+																	<outcome>Rejection or supportive advice for inclusion in the NHS</outcome>
+																</option>
+																<option>
+																	<value>No</value>
+																	<condition>Evidence tier 3a low risk</condition>
+																	<condition>Effectiveness assessment based on evidence tier</condition>
+																	<condition>Decision by NICE</condition>
+																	<outcome>Rejection or supportive advice for inclusion in the NHS</outcome>
+																</option>
+															</question>
+														</option>
+														<option>
+															<value>No</value>
+															<question>
+																<title>7. Can the function of the DHT  be classified as: inform, simple monitoring and/or communicate?</title>
+																<option>
+																	<value>Yes</value>
+																	<question>
+																		<title>9. Can the DHT be classified as an higher-risk DHT?*</title>
+																		<description>* Contextual questions to help identify higher-risk DHTs: 1. Are the intended users of the DHT considered to be in a potentially vulnerable group such as children or at-risk adults? 2. How serious could the consequences be to the user if the DHT failed to perform as described? 3. Is the DHT intended to be used with regular support from a suitably qualified and experienced health or social care professional? 4. Does the DHT include machine learning algorithms or artificial intelligence?</description>
+																		<option>
+																			<value>Yes</value>
+																			<condition>Evidence tier 2 high risk</condition>
+																			<condition>Effectiveness assessment based on evidence tier</condition>
+																			<condition>Decision by NICE</condition>
+																			<outcome>Rejection or supportive advice for inclusion in the NHS</outcome>
+																		</option>
+																		<option>
+																			<value>No</value>
+																			<condition>Evidence tier 2 low risk</condition>
+																			<condition>Effectiveness assessment based on evidence tier</condition>
+																			<condition>Decision by NICE</condition>
+																			<outcome>Rejection or supportive advice for inclusion in the NHS</outcome>
+																		</option>
+																	</question>
+																</option>
+																<option>
+																	<value>No</value>
+																	<question>
+																		<title>8. Can the function of the DHT be classified only as: System service?</title>
+																		<option>
+																			<value>Yes</value>
+																			<question>
+																				<title>9. Can the DHT be classified as an higher-risk DHT?*</title>
+																				<description>* Contextual questions to help identify higher-risk DHTs: 1. Are the intended users of the DHT considered to be in a potentially vulnerable group such as children or at-risk adults? 2. How serious could the consequences be to the user if the DHT failed to perform as described? 3. Is the DHT intended to be used with regular support from a suitably qualified and experienced health or social care professional? 4. Does the DHT include machine learning algorithms or artificial intelligence?</description>
+																				<option>
+																					<value>Yes</value>
+																					<condition>Evidence tier 1 high risk</condition>
+																					<condition>Effectiveness assessment based on evidence tier</condition>
+																					<condition>Decision by NICE</condition>
+																					<outcome>Rejection or supportive advice for inclusion in the NHS</outcome>
+																				</option>
+																				<option>
+																					<value>No</value>
+																					<condition>Evidence tier 1 low risk</condition>
+																					<condition>Effectiveness assessment based on evidence tier</condition>
+																					<condition>Decision by NICE</condition>
+																					<outcome>Rejection or supportive advice for inclusion in the NHS</outcome>
+																				</option>
+																			</question>
+																		</option>
+																		<option>
+																			<value>No</value>
+																			<outcome>Not eligible for review by NICE</outcome>
+																		</option>
+																	</question>
+																</option>
+															</question>
+														</option>
+													</question>
+												</option>
+											</question>
+										</option>
+										<option>
+											<value>Rejection</value>
+											<outcome>Advise provided on resubmission</outcome>
+										</option>
+									</question>
+								</option>
+								<option>
+									<value>No</value>
+									<outcome>Not eligible for inclusion in MTEP</outcome>
+								</option>
+							</question>
+						</option>
+						<option>
+							<value>No</value>
+							<outcome>Not eligible for inclusion in MTEP</outcome>
+						</option>
+					</question>
+				</option>
+				<option>
+					<value>No</value>
+					<outcome>Not eligible for inclusion in MTEP</outcome>
+				</option>
+			</question>
+		</option>
+		<option>
+			<value>No</value>
+			<outcome>Not eligible for inclusion in MTEP</outcome>
+		</option>
+	</question>
+	<condition>Registration to NHS assessment portal </condition>
+	<evidence>Evidence required</evidence>
+	<question>
+		<title>11. Does the DHT meet the eligibility criteria?**</title>
+    <description>** The product is already available to the public in the App Store, Google Play, or by other means the developer can be contacted directly by product users, the product doesn’t use any form of NHS branding, unless permitted to do so, the developer must have evidence that a proper interoperability review has been done, if the product connects to any NHS services, the product must be registered and have the relevant certification, if it's a medical device, the product must be registered with the General Pharmaceutical Council, if it provides a pharmacy service, the developer must provide the healthcare professional's registration status and names, if the product requires registered healthcare professionals to operate it developers are registered with the Care Quality Commission, if required developers can provide a guest login for use by those assessing their product. The developer's organisation needs to be registered as one of the following eligible types:</description>     <description>- Public Limited Company (PLC)</description>
+		<description>- Private Company Limited By Shares (Ltd)</description>
+		<description>- Company limited by guarantee</description>
+		<description>- Unlimited Company (Unltd)</description>
+		<description>- Limited Liability Partnership (LLP)</description>
+		<description>- Community Interest Company</description>
+		<description>- Industrial and Provident Society (IPS)</description>
+		<description>- Royal charter</description>
+		<description>- Public body</description>
+		<description>- Charitable organisation</description>
+		<option>
+			<value>Yes</value>
+			<condition>Review by NHS digital</condition>
+			<question>
+				<title>Rejection or acceptance of DHT</title>
+				<option>
+					<value>Rejection></value>
+					<outcome>Not included in NHS Apps Library</outcome>
+				</option>
+				<option>
+					<value>Acceptance</value>
+					<outcome>Publishing DHT on NHS Apps Library</outcome>
+				</option>
+			</question>
+		</option>
+		<option>
+			<value>No</value>
+			<outcome>Not eligble for inclusion in the NHS Apps Library</outcome>
+		</option>
+	</question>
+</framework>

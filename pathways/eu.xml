@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<framework>
+	<question>
+		<title>1. Is the product under consideration intended to be used for human beings?</title>
+		<option>
+			<value>Yes</value>
+			<question>
+				<title>2. Is the product under consideration intended to be used for one of the specific medical purposes? *</title>
+				<description>*- diagnosis, prevention, monitoring, prediction, prognosis, treatment or alleviation of disease, - diagnosis, monitoring, treatment, alleviation of, or compensation for, an injury or disability, - investigation, replacement or modification of the anatomy or of a physiological or pathological process or state, - providing information by means of in vitro examination of specimens derived from the human body, including organ, blood and tissue donations?</description>
+				<option>
+					<value>Yes</value>
+					<question>
+						<title>4. Does the product under considerationNOTachieve its principal intended action by pharmacological, immunological or metabolic means, in or on the human body, but which may be assisted in its function by such means?</title>
+						<option>
+							<value>Yes</value>
+							<question>
+								<title>5. Does the product under consideration fit the  description?**</title>
+								<description>** devices for the control or support of conception; - products specifically intended for the cleaning, disinfection or sterilisation of devices as referred to in Article 1(4) of Regulation (EU) 2017/745 and of those referred to in the first paragraph of Article 2(1).</description>
+								<option>
+									<value>Yes</value>
+									<question>
+										<title>6. In addition to fulfilling the definition of a medical device, does the product under consideration also fulfil the definition an in vitro diagnostic medical device as defined in Annex 2 (2) of Regulation (EU) 2017/746?</title>
+										<description>LIST OF GROUPS OF PRODUCTS WITHOUT AN INTENDED MEDICAL PURPOSE REFERRED TO IN ARTICLE 1(2) 1. Contact lenses or other items intended to be introduced into or onto the eye. 2. Products intended to be totally or partially introduced into the human body through surgically invasive means for the purpose of modifying the anatomy or fixation of body parts with the exception of tattooing products and piercings. 3. Substances, combinations of substances, or items intended to be used for facial or other dermal or mucous membrane filling by subcutaneous, submucous or intradermal injection or other introduction, excluding those for tattooing. 4. Equipment intended to be used to reduce, remove or destroy adipose tissue, such as equipment for liposuction, lipolysis or lipoplasty. 5. High intensity electromagnetic radiation (e.g. infra-red, visible light and ultraviolet) emitting equipment intended for use on the human body, including coherent and non-coherent sources, monochromatic and broad spectrum, such as lasers and intense pulsed light equipment, for skin resurfacing, tattoo or hair removal or other skin treatment. 6. Equipment intended for brain stimulation that apply electrical currents or magnetic or electromagnetic fields that penetrate the cranium to modify neuronal activity in the brain.</description>
+										<option>
+											<value>Yes</value>
+											<condition>DHT is an in vitro diagnostic medical device</condition>
+											<outcome>EU IVDR</outcome>
+										</option>
+										<option>
+											<value>No</value>
+											<condition>DHT is a medical device</condition>
+											<question>
+												<title>7. Can the DHT be classified as Class I?</title>
+												<option>
+													<value>Yes</value>
+													<condition>Self-assessment procedure</condition>
+													<evidence>Evidence required</evidence>
+													<condition>Declaration of conformity by manufacturer</condition>
+													<condition>Registration of device</condition>
+													<outcome>Affix CE-marking on DHT</outcome>
+												</option>
+												<option>
+													<value>No</value>
+													<condition>Application to notified body</condition>
+													<evidence>Evidence required</evidence>
+													<condition>Declaration of conformity by notified body</condition>
+													<condition>Registration of device</condition>
+													<outcome>Affix CE-marking on DHT</outcome>
+												</option>
+											</question>
+										</option>
+									</question>
+								</option>
+							</question>
+						</option>
+					</question>
+				</option>
+				<option>
+					<value>No</value>
+					<question>
+						<title>3. Is the product under consideration listed in Annex XVI?</title>
+						<option>
+							<value>Yes</value>
+							<condition>DHT is a medical device</condition>
+							<question>
+								<title>7. Can the DHT be classified as Class I?</title>
+								<option>
+									<value>Yes</value>
+									<condition>Self-assessment procedure</condition>
+									<evidence>Evidence required</evidence>
+									<condition>Declaration of conformity by manufacturer</condition>
+									<condition>Registration of device</condition>
+									<outcome>Affix CE-marking on DHT</outcome>
+								</option>
+								<option>
+									<value>No</value>
+									<condition>Application to notified body</condition>
+									<evidence>Evidence required</evidence>
+									<condition>Declaration of conformity by notified body</condition>
+									<condition>Registration of device</condition>
+									<outcome>Affix CE-marking on DHT</outcome>
+						</option>
+						<option>
+							<value>No</value>
+							<outcome>CE-mark not needed under the MDR</outcome>
+						</option>
+					</question>
+				</option>
+			</question>
+		</option>
+		<option>
+			<value>No</value>
+			<outcome>CE-marking not needed under the MDR</outcome>
+		</option>
+	</question>
+</framework>

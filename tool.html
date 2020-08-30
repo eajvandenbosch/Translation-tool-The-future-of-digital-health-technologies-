@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Translation tool</title>
+		<style>
+
+			ul,li {
+				margin: 0;
+				padding: 0;
+			}
+
+			ul {
+				list-style-type: none;
+			}
+
+			ul > li > ul {
+				display: none;
+			}
+
+			input[type="radio"]:checked + ul {
+				display: block;
+			}
+
+			.condition {
+				width: 500px;
+				background-color: lightgreen;
+				margin-top: 15px;
+			}
+
+			.title {
+				width: 500px;
+				background-color: lightgrey;
+				margin-top: 15px;
+			}
+
+			.description {
+				width: 500px;
+				background-color: lightyellow;
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+
+			.outcome {
+				width: 500px;
+				border: 5px solid black;
+				margin-top: 15px;
+			}
+
+			.evidence {
+				width: 500px;
+				margin-top: 15px;
+			}
+
+			.evidence:before {
+				content: '! ';
+				color: red;
+				font-size: 24px;
+				font-weight: bolder;
+			}
+
+		</style>
+		<script type="text/javascript">
+
+			function c(e) {
+				var options = e.parentElement.parentElement.querySelectorAll(':scope > .option');//.style.display = 'none';
+				for(let i = 0; i < options.length; i++) {
+					options[i].style.display = 'none';
+				}
+				e.parentElement.style.display = 'block';
+			}
+
+			var openFile = function(event) {
+				//Load file
+				var input = event.target;
+				var text = "";
+				var reader = new FileReader();
+				var onload = function(event) {
+					text = reader.result;
+					parseFile(text);
+
+				};
+
+				reader.onload = onload;
+				reader.readAsText(input.files[0]);
+
+			};
+
+			function parseFile(text) {
+				//Parse file as XML
+				parser = new DOMParser();
+				xmlDoc = parser.parseFromString(text,"text/xml");
+
+				//Create unordered list from XML file
+				createList(xmlDoc.documentElement);
+				//Display unordered list
+				document.getElementById('framework').innerHTML = list;
+			}
+
+			//Start of list
+			var list = "";
+
+			function createList(xmlDoc) {
+				//Loop recursively through XML file
+				for(let i = 0; i < xmlDoc.children.length; i++) {
+					addList(xmlDoc.children[i]);
+					if(xmlDoc.children[i].children.length > 0) {
+						createList(xmlDoc.children[i]);
+					}
+					endList(xmlDoc.children[i]);
+				}
+			}
+
+			function addList(node) {
+				//Add to list depending on node in XML file
+				switch(node.nodeName) {
+					case 'question':
+						list += "<ul>";
+						break;
+					case 'condition':
+						list += "<li class='condition'>" + node.textContent + "</li>";
+						break;
+					case 'title':
+						list += "<li class='title'>" + node.textContent + "</li>";
+						break;
+					case 'description':
+						list += "<li class='description'>" + node.textContent + "</li>";
+						break;
+					case 'option':
+						list += "<li class='option'><input onClick=c(this) type='radio' />";
+						break;
+					case 'value':
+						list += node.textContent + "<ul>";
+						break;
+					case 'outcome':
+						list += "<li class='outcome'>" + node.textContent + "</li>";
+						break;
+					case 'evidence':
+						list += "<li class='evidence'>" + node.textContent + "</li>";
+						break;
+					default:
+						break;
+				}
+			}
+
+			function endList(node) {
+				//Add to list depending on node in XML file
+				switch(node.nodeName) {
+					case 'option':
+						list += "</ul></li>";
+						break;
+					case 'question':
+						list += "</ul>";
+						break;
+					default:
+						break;
+				}
+			}
+
+		</script>	
+	</head>
+	<body>
+		<input type='file' accept='text/xml' onchange='openFile(event)'>
+		<div id="container">
+			<ul id="framework"></ul>
+		</div>
+	</body>
+</html>

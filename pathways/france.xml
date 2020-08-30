@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<framework>
+	<description>ETAPES (temporary)</description>
+	<question>
+		<title>1. Is the DHT a telemonitoring device?</title>
+		<option>
+			<value>Yes</value>
+			<question>
+				<title>2. Does the DHT relate to one of the five pathologies?*</title>
+				<description>*  - Heart failure  - Renal failure  - Respiratory failure  - Diabetes  - Implantable cardiac prostheses</description>
+				<option>
+					<value>Yes</value>
+					<condition>Eligible for ETAPES</condition>
+					<outcome>ETAPES</outcome>
+					<outcome>LPPR</outcome>
+					<description>Traditional pathway through HAS (LPPR) sustainable reimbursement</description>
+					<question>
+						<title>3. Does the DHT have a CE-marking?</title>
+						<option>
+							<value>Yes</value>
+							<question>
+								<title>4. Is the DHT meant for individual use?</title>
+								<option>
+									<value>Yes</value>
+									<question>
+										<title>5. Does the DHT have a telecommunication function?</title>
+										<option>
+											<value>Yes</value>
+											<condition>Application for inclusion LPPR</condition>
+											<evidence>Evidence required</evidence>
+											<question>
+												<title>6. Does the DHT have a positive impact for the patient and the public health?</title>
+												<option>
+													<value>Yes</value>
+													<condition>Sufficient actual clinical benefit</condition>
+													<condition>Opinion favourable for inclusion LPPR</condition>
+													<condition>CAV evaluation I till V</condition>
+													<outcome>Ministry rejects or accepts DHT for inclusion</outcome>
+												</option>
+												<option>
+													<value>No</value>
+													<condition>Insufficient actual clinical benefit</condition>
+													<outcome>Opinion unfavourable for inclusion LPPR</outcome>
+												</option>
+											</question>
+										</option>
+										<option>
+											<value>No</value>
+											<outcome>Not able to apply for inclusion LPPR</outcome>
+											<outcome>Article 51 of the LFSS 2018</outcome>
+										</option>
+									</question>
+								</option>
+								<option>
+									<value>No</value>
+									<outcome>Not able to apply for inclusion LPPR</outcome>
+									<outcome>Article 51 of the LFSS 2018</outcome>
+								</option>
+							</question>
+						</option>
+						<option>
+							<value>No</value>
+							<outcome>Not able to apply for inclusion LPPR</outcome>
+							<outcome>Article 51 of the LFSS 2018</outcome>
+						</option>
+					</question>
+				</option>
+				<option>
+					<value>No</value>
+					<outcome>Not eligable for ETAPES</outcome>
+					<description>Traditional pathway through HAS (LPPR) sustainable reimbursement</description>
+					<question>
+						<title>3. Does the DHT have a CE-marking?</title>
+						<option>
+							<value>Yes</value>
+							<question>
+								<title>4. Is the DHT meant for individual use?</title>
+								<option>
+									<value>Yes</value>
+									<question>
+										<title>5. Does the DHT have a telecommunication function?</title>
+										<option>
+											<value>Yes</value>
+											<condition>Application for inclusion LPPR</condition>
+											<evidence>Evidence required</evidence>
+											<question>
+												<title>6. Does the DHT have a positive impact for the patient and the public health?</title>
+												<option>
+													<value>Yes</value>
+													<condition>Sufficient actual clinical benefit</condition>
+													<condition>Opinion favourable for inclusion LPPR</condition>
+													<condition>CAV evaluation I till V</condition>
+													<outcome>Ministry rejects or accepts DHT for inclusion</outcome>
+												</option>
+												<option>
+													<value>No</value>
+													<condition>Insufficient actual clinical benefit</condition>
+													<outcome>Opinion unfavourable for inclusion LPPR</outcome>
+												</option>
+											</question>
+										</option>
+										<option>
+											<value>No</value>
+											<outcome>Not able to apply for inclusion LPPR</outcome>
+											<outcome>Article 51 of the LFSS 2018</outcome>
+										</option>
+									</question>
+								</option>
+								<option>
+									<value>No</value>
+									<outcome>Not able to apply for inclusion LPPR</outcome>
+									<outcome>Article 51 of the LFSS 2018</outcome>
+								</option>
+							</question>
+						</option>
+						<option>
+							<value>No</value>
+							<outcome>Not able to apply for inclusion LPPR</outcome>
+							<outcome>Article 51 of the LFSS 2018</outcome>
+						</option>
+					</question>
+				</option>
+			</question>
+		</option>
+		<option>
+			<value>No</value>
+			<outcome>Not eligable for ETAPES</outcome>
+			<description>Traditional pathway through HAS (LPPR) sustainable reimbursement</description>
+			<question>
+				<title>3. Does the DHT have a CE-marking?</title>
+				<option>
+					<value>Yes</value>
+					<question>
+						<title>4. Is the DHT meant for individual use?</title>
+						<option>
+							<value>Yes</value>
+							<question>
+								<title>5. Does the DHT have a telecommunication function?</title>
+								<option>
+									<value>Yes</value>
+									<condition>Application for inclusion LPPR</condition>
+									<evidence>Evidence required</evidence>
+									<question>
+										<title>6. Does the DHT have a positive impact for the patient and the public health?</title>
+										<option>
+											<value>Yes</value>
+											<condition>Sufficient actual clinical benefit</condition>
+											<condition>Opinion favourable for inclusion LPPR</condition>
+											<condition>CAV evaluation I till V</condition>
+											<outcome>Ministry rejects or accepts DHT for inclusion</outcome>
+										</option>
+										<option>
+											<value>No</value>
+											<condition>Insufficient actual clinical benefit</condition>
+											<outcome>Opinion unfavourable for inclusion LPPR</outcome>
+										</option>
+									</question>
+								</option>
+								<option>
+									<value>No</value>
+									<outcome>Not able to apply for inclusion LPPR</outcome>
+									<outcome>Article 51 of the LFSS 2018</outcome>
+								</option>
+							</question>
+						</option>
+						<option>
+							<value>No</value>
+							<outcome>Not able to apply for inclusion LPPR</outcome>
+							<outcome>Article 51 of the LFSS 2018</outcome>
+						</option>
+					</question>
+				</option>
+				<option>
+					<value>No</value>
+					<outcome>Not able to apply for inclusion LPPR</outcome>
+					<outcome>Article 51 of the LFSS 2018</outcome>
+				</option>
+			</question>
+		</option>
+	</question>
+</framework>

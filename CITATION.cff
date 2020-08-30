@@ -1,0 +1,8 @@
+cff-version: 1.1.0
+message: "Translation tool master thesis at Utrecht University."
+authors:
+  - family-names: "van den Bosch"
+    given-names: "Noor"
+title: "Translation tool"
+version: 1.0.0
+date-released: 2020-08-11
